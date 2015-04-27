@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/chat_message_list"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/chat_image"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/chat_message_chat" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_send"
+            android:text="发送"
+            android:onClick="btnSendOnClick"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/face_container"
+    >
+  <ImageView
+      android:id="@+id/chat_image1"
+      android:layout_width="72dp"
+      android:layout_height="72dp"
+      android:src="@drawable/face1"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:onClick="btnFaceOnClick"
+      />
+    <ImageView
+        android:id="@+id/chat_image2"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/face2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="btnFaceOnClick"
+
+        />
+    <ImageView
+        android:id="@+id/chat_image3"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/face3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="btnFaceOnClick"
+
+        />
+    <ImageView
+        android:id="@+id/chat_image4"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/face4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="btnFaceOnClick"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

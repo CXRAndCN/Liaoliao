@@ -230,7 +230,7 @@ public class ChatActivity extends ActionBarActivity implements ServiceConnection
         String to = message.getTo();
         String body = message.getBody();
         Log.d("--------->ChatActivity", "message from" + from + ":" + to + ":" + body);
-
+Log.d("--------->",from);
     }
 
     /**
